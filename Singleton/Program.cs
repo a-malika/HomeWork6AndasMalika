@@ -12,7 +12,6 @@ namespace HomeWork6
         {
             string filePath = "settings.txt";
 
-            // Создаем несколько потоков для работы с ConfigurationManager
             Thread thread1 = new Thread(() => RunConfigurationManager("Thread 1", filePath));
             Thread thread2 = new Thread(() => RunConfigurationManager("Thread 2", filePath));
             Thread thread3 = new Thread(() => RunConfigurationManager("Thread 3", filePath));
